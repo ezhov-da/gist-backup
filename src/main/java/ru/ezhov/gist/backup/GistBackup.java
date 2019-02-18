@@ -37,9 +37,8 @@ public class GistBackup {
             System.out.println("Имя пользователя '" + username + "'");
         }
         String bkpFolder = System.getProperty("gist.bkp.folder", System.getProperty("user.dir"));
-        if (bkpFolder == null || "".equals(bkpFolder)) {
-            System.out.println("Папка для бэкапа '" + bkpFolder + "'");
-        }
+        System.out.println("Не указана папка для бэкапа '-Dgist.bkp.folder' установлена '" + bkpFolder + "'");
+
         File file = new File(
                 bkpFolder,
                 String.format(
