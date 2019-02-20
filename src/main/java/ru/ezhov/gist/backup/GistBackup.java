@@ -17,8 +17,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
+
+//Если вы хотите использовать другой файл, нужно при запуске приложения установить свойство java.util.logging.config.file:
+//java -Djava.util.logging.config.file=конфигурационный_файл класс
 public class GistBackup {
     private static final Logger LOG = Logger.getLogger(GistBackup.class.getName());
 
@@ -28,15 +32,19 @@ public class GistBackup {
         if (gistToken == null || "".equals(gistToken)) {
             throw new IllegalArgumentException("Не указан токен пользователя '-Dgist.token'");
         } else {
+            LOG.log(Level.INFO, "Токен пользователя '" + gistToken.replaceAll(".", "*") + "'");
             System.out.println("Токен пользователя '" + gistToken.replaceAll(".", "*") + "'");
         }
         String username = System.getProperty("gist.username");
         if (username == null || "".equals(username)) {
+            LOG.log(Level.WARNING, "Не указан логин пользователя '-Dgist.username'");
             throw new IllegalArgumentException("Не указан логин пользователя '-Dgist.username'");
         } else {
+            LOG.log(Level.INFO, "Имя пользователя '" + username + "'");
             System.out.println("Имя пользователя '" + username + "'");
         }
         String bkpFolder = System.getProperty("gist.bkp.folder", System.getProperty("user.dir"));
+        LOG.log(Level.INFO, "Не указана папка для бэкапа '-Dgist.bkp.folder' установлена '" + bkpFolder + "'");
         System.out.println("Не указана папка для бэкапа '-Dgist.bkp.folder' установлена '" + bkpFolder + "'");
 
         File file = new File(
@@ -48,11 +56,13 @@ public class GistBackup {
                 )
         );
         System.out.println("Абсолютный путь файла бэкапа '" + file.getAbsolutePath() + "'");
+        LOG.log(Level.INFO, "Абсолютный путь файла бэкапа '" + file.getAbsolutePath() + "'");
         try (FileOutputStream fileOutputStream = new FileOutputStream(file)) {
             XMLStreamWriter xsw = XMLOutputFactory.newFactory().createXMLStreamWriter(fileOutputStream);
             xsw.writeStartDocument();
             xsw.writeStartElement("gists");
             System.out.println("Начато создание бэкапа...");
+            LOG.log(Level.INFO, "Начато создание бэкапа...");
             System.out.print("=> ");
             AtomicInteger counter = new AtomicInteger();
             readGists(gistToken, username, (name, content) -> {
@@ -76,7 +86,9 @@ public class GistBackup {
             xsw.close();
             long endTime = System.currentTimeMillis();
             System.out.println("Бэкап gist создан. Количество gist '" + counter.get() + "'. Файл '" + file.getAbsolutePath() + "'. Время создания бэкапа '" + (endTime - startTime) + " ms'");
+            LOG.log(Level.INFO, "Бэкап gist создан. Количество gist '" + counter.get() + "'. Файл '" + file.getAbsolutePath() + "'. Время создания бэкапа '" + (endTime - startTime) + " ms'");
         } catch (Exception e) {
+            LOG.log(Level.SEVERE, "Ошибка работы приложения", e);
             e.printStackTrace();
         }
     }
