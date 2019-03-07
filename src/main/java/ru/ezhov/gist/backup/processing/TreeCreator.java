@@ -42,10 +42,12 @@ public class TreeCreator {
                         DefaultMutableTreeNode currentNode =
                                 ((DefaultMutableTreeNode) treePath.getLastPathComponent());
                         DefaultMutableTreeNode parent = (DefaultMutableTreeNode) currentNode.getParent();
-                        if (!"root".equals(parent.getUserObject().toString())) {
-                            String nameParent = String.valueOf(parent.getUserObject());
-                            String nameCurrentNode = String.valueOf(currentNode.getUserObject());
-                            parent.setUserObject(nameParent + " " + nameCurrentNode);
+                        if (!"root".equals(getFromUserObject(parent).getEdit())) {
+                            String nameParent = getFromUserObject(parent).getEdit();
+                            String nameCurrentNode = getFromUserObject(currentNode).getEdit();
+                            NodeData nodeDataParent = getFromUserObject(parent);
+                            nodeDataParent.setEdit(nameParent + " " + nameCurrentNode);
+                            parent.setUserObject(nodeDataParent);
                             int childCount = currentNode.getChildCount();
                             List<DefaultMutableTreeNode> child = new ArrayList<>();
                             for (int i = 0; i < childCount; i++) {
@@ -60,6 +62,34 @@ public class TreeCreator {
                     }
                 });
             });
+            //Объединить текущий со всеми детьми
+            tree.addKeyListener(new KeyAdapter() {
+                @Override
+                public void keyReleased(KeyEvent e) {
+                    if (e.getKeyCode() == KeyEvent.VK_J && e.isControlDown()) {
+                        SwingUtilities.invokeLater(() -> {
+                            TreePath treePath = tree.getSelectionPath();
+                            if (treePath != null) {
+                                DefaultMutableTreeNode currentNode =
+                                        ((DefaultMutableTreeNode) treePath.getLastPathComponent());
+                                if (!"root".equals(getFromUserObject(currentNode).getEdit())) {
+                                    String fullName = fullNameAfterEdit(currentNode, "").trim();
+                                    String firstCharUpperCase = fullName.substring(0, 1).toUpperCase();
+                                    String otherWord = fullName.substring(1);
+                                    String name = firstCharUpperCase + otherWord;
+                                    NodeData nodeDataCurrent = getFromUserObject(currentNode);
+                                    nodeDataCurrent.setEdit(name);
+                                    currentNode.setUserObject(nodeDataCurrent);
+                                    currentNode.removeAllChildren();
+                                    DefaultTreeModel dtm = (DefaultTreeModel) tree.getModel();
+                                    dtm.reload(currentNode);
+                                }
+                            }
+                        });
+                    }
+                }
+            });
+
             menu.add(itemEdit);
             menu.add(itemMove);
             tree.setComponentPopupMenu(menu);
@@ -84,20 +114,22 @@ public class TreeCreator {
                     if (treePaths != null && treePaths.length > 0) {
                         TreePath parent = treePaths[0];
                         DefaultMutableTreeNode parentNode = (DefaultMutableTreeNode) parent.getLastPathComponent();
-                        if (!"root".equals(parentNode.getUserObject().toString())) {
-                            String nameParent = String.valueOf(parentNode.getUserObject());
+                        if (!"root".equals(getFromUserObject(parentNode).getEdit())) {
+                            String nameParent = getFromUserObject(parentNode).getEdit();
                             StringBuilder stringBuilder = new StringBuilder();
                             stringBuilder.append(nameParent).append(" ");
                             for (int i = 1; i < treePaths.length; i++) {
                                 TreePath current = treePaths[i];
                                 DefaultMutableTreeNode currentNode = (DefaultMutableTreeNode) current.getLastPathComponent();
-                                stringBuilder.append(currentNode.getUserObject());
+                                stringBuilder.append(getFromUserObject(currentNode).getEdit());
                                 if (i + 1 != treePaths.length) {
                                     stringBuilder.append(" ");
                                 }
                                 parentNode.removeAllChildren();
                             }
-                            parentNode.setUserObject(stringBuilder.toString());
+                            NodeData nodeDataParent = getFromUserObject(parentNode);
+                            nodeDataParent.setEdit(stringBuilder.toString());
+                            parentNode.setUserObject(nodeDataParent);
                             DefaultTreeModel dtm = (DefaultTreeModel) tree.getModel();
                             dtm.reload(parentNode);
                         }
@@ -108,8 +140,8 @@ public class TreeCreator {
 
             frame.add(toolBar, BorderLayout.WEST);
 
-            JButton buttonUpload = new JButton("Сохранить данные");
-            buttonUpload.addActionListener(a -> {
+            JButton buttonSave = new JButton("Сохранить данные");
+            buttonSave.addActionListener(a -> {
                 DefaultTreeModel dtm = (DefaultTreeModel) tree.getModel();
                 if (dtm != null && dtm.getRoot() != null) {
                     DefaultMutableTreeNode root = (DefaultMutableTreeNode) dtm.getRoot();
@@ -118,8 +150,9 @@ public class TreeCreator {
                     try (FileWriter fileWriter = new FileWriter(file)) {
                         for (int i = 0; i < childCount; i++) {
                             DefaultMutableTreeNode rootCurrent = (DefaultMutableTreeNode) root.getChildAt(i);
+                            NodeData nodeData = getFromUserObject(rootCurrent);
                             String fullName = fullName(rootCurrent, "");
-                            fileWriter.append(fullName).append("\n");
+                            fileWriter.append(nodeData.getOriginal()).append("||").append(fullName).append("\n");
                         }
                         System.out.println("файл сохранен: " + file.getAbsolutePath());
                     } catch (Exception e) {
@@ -135,7 +168,7 @@ public class TreeCreator {
             panel.add(new JScrollPane(tree), BorderLayout.CENTER);
 
             JPanel south = new JPanel(new BorderLayout());
-            south.add(buttonUpload, BorderLayout.CENTER);
+            south.add(buttonSave, BorderLayout.CENTER);
             panel.add(south, BorderLayout.SOUTH);
             frame.add(panel);
             frame.setSize(1000, 600);
@@ -145,12 +178,26 @@ public class TreeCreator {
         });
     }
 
+    private static NodeData getFromUserObject(DefaultMutableTreeNode defaultMutableTreeNode) {
+        return (NodeData) defaultMutableTreeNode.getUserObject();
+    }
+
     private static String fullName(DefaultMutableTreeNode node, String name) {
         int childCount = node.getChildCount();
-        name = name + "-" + String.valueOf(node.getUserObject());
+        name = name + "-" + getFromUserObject(node).getEdit();
         for (int i = 0; i < childCount; i++) {
             DefaultMutableTreeNode n = (DefaultMutableTreeNode) node.getChildAt(i);
             name = fullName(n, name);
+        }
+        return name;
+    }
+
+    private static String fullNameAfterEdit(DefaultMutableTreeNode node, String name) {
+        int childCount = node.getChildCount();
+        name = name + " " + getFromUserObject(node).getEdit();
+        for (int i = 0; i < childCount; i++) {
+            DefaultMutableTreeNode n = (DefaultMutableTreeNode) node.getChildAt(i);
+            name = fullNameAfterEdit(n, name);
         }
         return name;
     }
@@ -170,9 +217,9 @@ public class TreeCreator {
     }
 
     private static TreeModel createTreeModel(String pathToFile) throws Exception {
-        DefaultMutableTreeNode root = new DefaultMutableTreeNode("root");
+        DefaultMutableTreeNode root = new DefaultMutableTreeNode(new NodeData("root", "root"));
         DefaultTreeModel dtm = new DefaultTreeModel(root);
-        List<String> rows = new ArrayList();
+        List<String> rows = new ArrayList<>();
         try (Scanner scanner = new Scanner(new File(pathToFile))) {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
@@ -181,11 +228,14 @@ public class TreeCreator {
         }
         Collections.sort(rows);
         rows.forEach(line -> {
-            String[] array = line.split("-");
+            String[] arrayOriginalAndForEdit = line.split("\\|\\|");
+            String original = arrayOriginalAndForEdit[0];
+            String edit = arrayOriginalAndForEdit[1];
+            String[] array = edit.split("-");
             Stack<DefaultMutableTreeNode> stack = new Stack<>();
             for (String s : array) {
                 if (s != null && !"".equals(s)) {
-                    DefaultMutableTreeNode part = new DefaultMutableTreeNode(s);
+                    DefaultMutableTreeNode part = new DefaultMutableTreeNode(new NodeData(original, s));
                     if (stack.isEmpty()) {
                         root.add(part);
                     } else {
@@ -239,7 +289,6 @@ public class TreeCreator {
         };
     }
 
-
     private static ActionListener getEditActionListener(JTree t) {
         return e -> {
             SwingUtilities.invokeLater(() -> {
@@ -249,5 +298,36 @@ public class TreeCreator {
                 }
             });
         };
+    }
+
+    private static class NodeData {
+        private String original;
+        private String edit;
+
+        public NodeData(String original, String edit) {
+            this.original = original;
+            this.edit = edit;
+        }
+
+        public String getOriginal() {
+            return original;
+        }
+
+        public void setOriginal(String original) {
+            this.original = original;
+        }
+
+        public String getEdit() {
+            return edit;
+        }
+
+        public void setEdit(String edit) {
+            this.edit = edit;
+        }
+
+        @Override
+        public String toString() {
+            return edit;
+        }
     }
 }
