@@ -1,0 +1,576 @@
+-arduino-LiquidCrystal.h||-arduino-LiquidCrystal.h
+-arduino-avrdude-stk500_recv-programmer-is-not.txt||-arduino-Avrdude stk500_recv programmer is not.txt
+-arduino-датчик-ds18b20||-arduino-Датчик ds18b20
+-arduino-датчик-влажности-и-температуры-dht11||-arduino-Датчик влажности и температуры dht11
+-arduino-два-запроса-к-серверу-из-chrome||-arduino-Два запроса к серверу из chrome
+-arduino-передача-данных-по-радиоканалу-на-частоте-433.920-МГц||-arduino-Передача данных по радиоканалу на частоте 433.920 МГц
+-arduino-реле-songle-srd-05vdc||-arduino-Реле songle srd 05vdc
+-arduino-сайт||-arduino-Сайт
+-arduino-фоторезистор||-arduino-Фоторезистор
+-bat-SUDO.cmd||-bat-SUDO.cmd
+-bat-application-runner.bat||-bat-Application runner.bat
+-bat-basics.txt||-bat-basics.txt
+-bat-comand-line-arguments.bat||-bat-Comand line arguments.bat
+-bat-create-zip.bat||-bat-Create zip.bat
+-bat-empty-variable.txt||-bat-Empty variable.txt
+-bat-for-cycle.bat||-bat-For cycle.bat
+-bat-generate-string-date.bat||-bat-Generate string date.bat
+-bat-if.txt||-bat-If.txt
+-bat-initialize-variable.bat||-bat-Initialize variable.bat
+-bat-list-files||-bat-List files
+-bat-recursive-rename-file.bat||-bat-Recursive rename file.bat
+-bat-simple-question||-bat-Simple question
+-bat-windows-console||-bat-Windows console
+-bat-запуск-ssis-пакетов.bat||-bat-Запуск ssis пакетов.bat
+-bat-имя-каталога-находится-запущенный-командный-файл.txt||-bat-Имя каталога находится запущенный командный файл.txt
+-bat-информация-о-пользователе.bat||-bat-Информация о пользователе.bat
+-bat-исключение-папки-из-удаления.bat||-bat-Исключение папки из удаления.bat
+-bat-отправка-команд-на-входной-поток.bat||-bat-Отправка команд на входной поток.bat
+-bat-отправка-почты-из-командной-строки.bat||-bat-Отправка почты из командной строки.bat
+-bat-папка-из-которой-запущен-bat.bat||-bat-Папка из которой запущен bat.bat
+-bat-перенаправление-аргументов-командной-строки-в-другой-bat-файл.bat||-bat-Перенаправление аргументов командной строки в другой bat файл.bat
+-bat-перенос-строк.txt||-bat-Перенос строк.txt
+-bat-пустая-строка.txt||-bat-Пустая строка.txt
+-bat-рандом.bat||-bat-Рандом.bat
+-bat-рекурсивное-удаление-файлов-папок||-bat-Рекурсивное удаление файлов папок
+-bat-список-файлов-из-директории.bat||-bat-Список файлов из директории.bat
+-bat-узнать-список-пользователей-группы||-bat-Узнать список пользователей группы
+-bat-экранирование-символов.txt||-bat-Экранирование символов.txt
+-common-book-думай-медленно-решай-быстро.txt||-common-book-Думай медленно решай быстро.txt
+-common-clean-architecture-метрики-устойчивочти.txt||-common-clean-architecture-Метрики устойчивочти.txt
+-common-cors-запросы.txt||-common-cors-Запросы.txt
+-common-education||-common-Education
+-common-hotkeys.json||-common-Hotkeys.json
+-common-icons||-common-Icons
+-common-jarfix_2.0.0.ini||-common-Jarfix_2.0.0.ini
+-common-jbake-создание-статического-сайта||-common-jbake-Создание статического сайта
+-common-kdiff.txt||-common-Kdiff.txt
+-common-mime-type-microsoft-docs.txt||-common-Mime type microsoft docs.txt
+-common-ssh-putty||-common-Ssh putty
+-common-telnet.txt||-common-Telnet.txt
+-common-uml.txt||-common-Uml.txt
+-common-virtualbox.txt||-common-Virtualbox.txt
+-common-w3school||-common-W3school
+-common-winscp-показать-скрытые-папки||-common-winscp-Показать скрытые папки
+-common-winscp||-common-Winscp
+-common-алгоритмы||-common-Алгоритмы
+-common-закрепить-bat-панель-задач.txt||-common-Закрепить bat панель задач.txt
+-common-кэш-иконок||-common-Кэш иконок
+-common-панель-быстрого-запуска-windows-10.txt||-common-Панель быстрого запуска windows 10.txt
+-common-пробрасывание-портов-на-домашнем-роутере||-common-Пробрасывание портов на домашнем роутере
+-common-создание-и-продление-ssl-сертификатов||-common-Создание и продление ssl сертификатов
+-common-утилиты-для-документации.txt||-common-Утилиты для документации.txt
+-common-файл-md5-freecommander.txt||-common-Файл md5 freecommander.txt
+-common-файл-md5||-common-Файл md5
+-common-формула-на-сколько-процентов-увеличилось-уменьшилось-второе-число||-common-Формула на сколько процентов увеличилось уменьшилось второе число
+-common-чпу-выжигатель.txt||-common-Чпу выжигатель.txt
+-css-8-трюков||-css-8 трюков
+-css-подключение-стилей||-css-Подключение стилей
+-db-h2db-unexpected-status||-db-H2db unexpected status
+-ddd-common.txt||-ddd-Common.txt
+-docker-контейнер-останавливается-в-windows.txt||-docker-Контейнер останавливается в windows.txt
+-docker-ошибка-авторизации.txt||-docker-Ошибка авторизации.txt
+-docker-перенос-виртуальной-машины-windows-10||-docker-Перенос виртуальной машины windows 10
+-docker||-docker
+-excel-неактивна-проверка-данных-и-project-is-unviewable||-excel-Неактивна проверка данных и project is unviewable
+-excel-сводная-таблица||-excel-Сводная таблица
+-excel-сделать-значения-как-текст||-excel-Сделать значения как текст
+-far-manager-hotkey||-far-Manager hotkey
+-git-.gitignore-idea||-git-.gitignore idea
+-git-add-gitignore-file||-git-Add gitignore file
+-git-branch-merge||-git-Branch merge
+-git-branches||-git-Branches
+-git-diff||-git-Diff
+-git-hooks-groovy.txt||-git-Hooks groovy.txt
+-git-intellij-refresh-list-remote-branches||-git-Intellij refresh list remote branches
+-git-lfs.txt||-git-Lfs.txt
+-git-proxy.txt||-git-Proxy.txt
+-git-pull-local-branch-from-remote||-git-Pull local branch from remote
+-git-ribbons.txt||-git-Ribbons.txt
+-git-ssh||-git-Ssh
+-git-ssl-error-при-клонировании.txt||-git-Ssl error при клонировании.txt
+-git-обновление-fork-репозитория.txt||-git-Обновление fork репозитория.txt
+-git-полезности||-git-Полезности
+-gradle-add-library-dependencies||-gradle-Add library dependencies
+-groovy-application-runner.groovy||-groovy-Application runner.groovy
+-groovy-closeable .groovy||-groovy-Closeable .groovy
+-groovy-dependencies-in-groovy-scripts.txt||-groovy-Dependencies in groovy scripts.txt
+-groovy-gsp-кодировка||-groovy-Gsp кодировка
+-groovy-pdf-wpc||-groovy-Pdf wpc
+-groovy-reading-and-writing-to-properties-file-(чтение-и-запись-файла-свойств)||-groovy-Reading and writing to properties file (чтение и запись файла свойств)
+-groovy-script-execute-cmd-command||-groovy-Script execute cmd command
+-groovy-servlet-базовая-авторизация||-groovy-Servlet базовая авторизация
+-groovy-servlet-неявные-переменные||-groovy-Servlet неявные переменные
+-groovy-swingui||-groovy-Swingui
+-groovy-ввод-с-консоли||-groovy-Ввод с консоли
+-groovy-выполнение-кода-получения-таблиц-пользователей||-groovy-Выполнение кода получения таблиц пользователей
+-groovy-запуск-скрипта-и-проверка-ошибки||-groovy-Запуск скрипта и проверка ошибки
+-groovy-запуск-скрипта-из-cmd||-groovy-Запуск скрипта из cmd
+-groovy-из-строки-в-код||-groovy-Из строки в код
+-groovy-обучение||-groovy-Обучение
+-groovy-ошибка-при-использовании-jsyntaxpane-[jeditorpane-is-not-enclosed-in-jscrollpane,-no-linenumbers-will-be-displayed]||-groovy-Ошибка при использовании jsyntaxpane [jeditorpane is not enclosed in jscrollpane, no linenumbers will be displayed]
+-groovy-подключение-через-прокси-(proxy)||-groovy-Подключение через прокси (proxy)
+-groovy-получение-данных-из-БД-+-парсинг-значений||-groovy-Получение данных из БД + парсинг значений
+-groovy-разные-запуски||-groovy-Разные запуски
+-groovy-распаковка-zip||-groovy-Распаковка zip
+-groovy-сервер-10-линий||-groovy-Сервер 10 линий
+-groovy-чтение-с-консоли||-groovy-Чтение с консоли
+-html-переадресация-в-html||-html-Переадресация в html
+-html-ссылка-на-адрес-электронной-почты||-html-Ссылка на адрес электронной почты
+-html-таблица-bootstrap||-html-Таблица bootstrap
+-intellij-idea-отключить-перенос-строк.txt||-intellij-Idea отключить перенос строк.txt
+-intellij-idea-показывать-непечатаемые-символы.txt||-intellij-Idea показывать непечатаемые символы.txt
+-java-ant-настройки-для-netbeans||-java-Ant настройки для netbeans
+-java-ant-сборка-проекта-в-netbeans-для-сервиса-приложений.txt||-java-Ant сборка проекта в netbeans для сервиса приложений.txt
+-java-ant-сборка-проекта-в-один-jar-через-netbeans||-java-ant-Сборка проекта в один jar через netbeans
+-java-ant-создание-exe-через-launch4j-netbeans||-java-ant-Создание exe через launch4j netbeans
+-java-ant-файл-build.properties||-java-ant-Файл build.properties
+-java-arquillian||-java-Arquillian
+-java-authenticator.java||-java-Authenticator.java
+-java-bat-динамическое-указание-classpath-из-bat||-java-Bat динамическое указание classpath из bat
+-java-byte-to-bit.java||-java-Byte to bit.java
+-java-color-to-hex||-java-Color to hex
+-java-combobox-и-popupmenu||-java-Combobox и popupmenu
+-java-common-повторение-символа.java||-java-Common повторение символа.java
+-java-componentenable-отключение-и-включение-всех-компонентов-в-родителе.java||-java-Componentenable отключение и включение всех компонентов в родителе.java
+-java-connection-pool||-java-Connection pool
+-java-convert-integer-to-rgb.java||-java-Convert integer to rgb.java
+-java-convert-rgb-to-grayscale.java||-java-Convert rgb to grayscale.java
+-java-copy-file.txt||-java-Copy file.txt
+-java-core-concurrency.java||-java-Core concurrency.java
+-java-cross-join-list||-java-Cross join list
+-java-date-разница-между-датами.java||-java-Date разница между датами.java
+-java-db-redis||-java-Db redis
+-java-dll-loader-from-jar.java||-java-Dll loader from jar.java
+-java-dll-из-cmd||-java-Dll из cmd
+-java-dll||-java-dll
+-java-ee-cdi||-java-ee-Cdi
+-java-ee-jaxrs-resteasy-тестирование||-java-ee-Jaxrs resteasy тестирование
+-java-ee-jndi-name||-java-ee-Jndi name
+-java-ee-web-xml-авторизация.txt||-java-ee-Web xml авторизация.txt
+-java-ee-получение-DataSource-в-сервере-приложений.java||-java-ee-Получение DataSource в сервере приложений.java
+-java-ee-проблема-внедрения-EJB-в-JAX-RS.txt||-java-ee-Проблема внедрения EJB в JAX RS.txt
+-java-ee7-api-maven-all||-java-ee7-Api maven all
+-java-entitymanager-null.txt||-java-Entitymanager null.txt
+-java-errai-framework||-java-Errai framework
+-java-extensions-diagram||-java-Extensions diagram
+-java-file-shredder||-java-File shredder
+-java-frame-background.java||-java-Frame background.java
+-java-fx-image-util-утилиты-для-конвертирования-изображения.java||-java-fx-Image util утилиты для конвертирования изображения.java
+-java-fx-набор-библиотек||-java-fx-Набор библиотек
+-java-fx-подсветка-через-webview||-java-fx-Подсветка через webview
+-java-fxframe-вставляем-форму-в-приложение.java||-java-fxframe-Вставляем форму в приложение.java
+-java-gist-code.java||-java-Gist code.java
+-java-groovy-форма||-java-Groovy форма
+-java-h2db-jdbc-driver.xml||-java-H2db jdbc driver.xml
+-java-h2db-jdbc-url.txt||-java-H2db jdbc url.txt
+-java-hibernate-hibernate-util-class||-java-Hibernate hibernate util class
+-java-hibernate-запросы||-java-Hibernate запросы
+-java-hibernate-типы-данных-для-маппинга||-java-Hibernate типы данных для маппинга
+-java-html-to-xml||-java-Html to xml
+-java-html-редактор||-java-Html редактор
+-java-idea-camel-case||-java-Idea camel case
+-java-intellij-idea-plugin-code-iris||-java-Intellij idea plugin code iris
+-java-intellij-idea-plugin-pmd||-java-Intellij idea plugin pmd
+-java-javafx-web-view||-java-Javafx web view
+-java-javalite||-java-Javalite
+-java-javapractices||-java-Javapractices
+-java-jbcrypt-strong-password-hashing.txt||-java-Jbcrypt strong password hashing.txt
+-java-jdo||-java-Jdo
+-java-jetextfieldhint-класс-с-отображением-текста-в-тексте-для-ввода-и-ограничением-по-длине||-java-Jetextfieldhint класс с отображением текста в тексте для ввода и ограничением по длине
+-java-jetty||-java-Jetty
+-java-jframe-вставляем-форму-в-приложение-1.7||-java-Jframe вставляем форму в приложение 1.7
+-java-jframe-вставляем-форму-в-приложение-1.8||-java-Jframe вставляем форму в приложение 1.8
+-java-jmeter-номер-потока.txt||-java-Jmeter номер потока.txt
+-java-jmeter-перебрать-все-записи-в-csv-файле-и-выполнить-действия.txt||-java-Jmeter перебрать все записи в csv файле и выполнить действия.txt
+-java-jmeter-установка-пользовательских-переменных-из-командной-строки.txt||-java-Jmeter установка пользовательских переменных из командной строки.txt
+-java-jmeter||-java-Jmeter
+-java-jmx||-java-Jmx
+-java-jpa-persistance.xml-h2db-inmemory||-java-jpa-Persistance.xml h2db inmemory
+-java-jsp-velocity||-java-Jsp velocity
+-java-jtree-работа-с-treepath||-java-Jtree работа с treepath
+-java-key-finger||-java-Key finger
+-java-keytool-ssl-сертификат-при-использовании-httpurlconnection-соединения||-java-Keytool ssl сертификат при использовании httpurlconnection соединения
+-java-keytool.java||-java-Keytool.java
+-java-log4j||-java-Log4j
+-java-logback-classic-module-maven.xml||-java-Logback classic module maven.xml
+-java-logback.txt||-java-Logback.txt
+-java-logback.xml-to-console.xml||-java-Logback.xml to console.xml
+-java-logger-использование-символа-'-в-сообщении-лога.txt||-java-Logger использование символа ' в сообщении лога.txt
+-java-logger-стандартный||-java-Logger стандартный
+-java-logstash||-java-Logstash
+-java-lombok-link.txt||-java-Lombok link.txt
+-java-mail-настройки.txt||-java-mail-настройки.txt
+-java-mailto||-java-mailto
+-java-maven-assembly-plugin-сборка-в-один-jar.xml||-java-maven-Assembly plugin сборка в один jar.xml
+-java-maven-book.txt||-java-maven-Book.txt
+-java-maven-build-jar||-java-maven-Build jar
+-java-maven-compile-build-source-version||-java-maven-Compile build source version
+-java-maven-detail||-java-maven-Detail
+-java-maven-gist-dependencies.xml||-java-maven-Gist dependencies.xml
+-java-maven-jar-from-system.xml||-java-maven-Jar from system.xml
+-java-maven-java_home||-java-maven-Java_home
+-java-maven-profiles.xml||-java-maven-Profiles.xml
+-java-maven-properties-from-file||-java-maven-Properties from file
+-java-maven-resources-build.xml||-java-maven-Resources build.xml
+-java-maven-set-path-pom-file||-java-maven-Set path pom file
+-java-maven-setting-source-target||-java-maven-Setting source target
+-java-maven-skip-test-command-line.txt||-java-maven-Skip test command line.txt
+-java-maven-surefire-plugin-disable-failure-tests.xml||-java-maven-Surefire plugin disable failure tests.xml
+-java-maven-surefire-plugin-skip-test.xml||-java-maven-Surefire plugin skip test.xml
+-java-maven-system.xml||-java-maven-System.xml
+-java-maven-wildfly-plugin-deployer.xml||-java-maven-Wildfly plugin deployer.xml
+-java-maven-добавление-jar-файла-в-локальное-хранилище||-java-maven-Добавление jar файла в локальное хранилище
+-java-maven-плагин-ant||-java-maven-Плагин ant
+-java-maven-плагины-(plugins)||-java-maven-Плагины (plugins)
+-java-maven-сборка-проекта-для-сервиса-приложений||-java-maven-Сборка проекта для сервиса приложений
+-java-maven-сборка-проекта-с-библиотеками-в-один-jar||-java-maven-Сборка проекта с библиотеками в один jar
+-java-maven-сборка-проекта-с-библиотеками-в-отдельную-папку||-java-maven-Сборка проекта с библиотеками в отдельную папку
+-java-maven-установка-архетипа-в-локальный-репозиторий-(spring-maven-mvc)||-java-maven-Установка архетипа в локальный репозиторий (spring maven mvc)
+-java-mbean-(jmc).txt||-java-Mbean (jmc).txt
+-java-md5||-java-Md5
+-java-method-name-dynamic||-java-Method name dynamic
+-java-mouse-move-window-listener-перетаскиваем-форму-frame||-java-Mouse move window listener перетаскиваем форму frame
+-java-mssql-jdbc||-java-Mssql jdbc
+-java-netbeans-maven||-java-Netbeans maven
+-java-netbeans-заморозка-экрана-в-версии-8.0-frozen||-java-Netbeans заморозка экрана в версии 8.0 frozen
+-java-netbeans-не-подсказываются-импорты||-java-Netbeans не подсказываются импорты
+-java-netbeans-установка-jdk-по-умолчанию-при-запуске||-java-Netbeans установка jdk по умолчанию при запуске
+-java-okhttp||-java-Okhttp
+-java-olap||-java-Olap
+-java-pack-folder-to-war||-java-Pack folder to war
+-java-persistence-api-cache||-java-Persistence api cache
+-java-post-изображения||-java-Post изображения
+-java-progress-console-loader.java||-java-Progress console loader.java
+-java-proxy-apps-examples||-java-Proxy apps examples
+-java-read-image-file.java||-java-Read image file.java
+-java-replaceAll.java||-java-ReplaceAll.java
+-java-run-class-file.java||-java-Run class file.java
+-java-runner-example.java||-java-Runner example.java
+-java-rxjava-реактивное-программирование||-java-Rxjava реактивное программирование
+-java-servlet-filter-charset||-java-Servlet filter charset
+-java-servlet-отправка-файла-клиенту||-java-Servlet отправка файла клиенту
+-java-signing-code-and-granting-it-permissions.java||-java-Signing code and granting it permissions.java
+-java-sl4j||-java-Sl4j
+-java-socket-proxy||-java-Socket proxy
+-java-socketchannel-example.java||-java-Socketchannel example.java
+-java-spark-download-random-file.java||-java-Spark download random file.java
+-java-spring-hibernate||-java-Spring hibernate
+-java-spring-spc||-java-Spring spc
+-java-spring-web-services||-java-Spring web services
+-java-spring-базовые-зависимости-maven-spring||-java-Spring базовые зависимости maven spring
+-java-stream-api||-java-Stream api
+-java-string-format.java||-java-String format.java
+-java-svn-kit.txt||-java-Svn kit.txt
+-java-swing-binding||-java-Swing binding
+-java-swing-uimanager-keys||-java-swing-Uimanager keys
+-java-swing-объединение-иконок.java||-java-swing-Объединение иконок.java
+-java-teradata-jdbc||-java-Teradata jdbc
+-java-tomcat-deploy-from-maven-to-server||-java-tomcat-Deploy from maven to server
+-java-tomcat-mssql-настройка-подключения||-java-tomcat-Mssql настройка подключения
+-java-trus-all-https.java||-java-Trus all https.java
+-java-tutorial||-java-Tutorial
+-java-typereference-(super-type-tokens)||-java-Typereference (super type tokens)
+-java-uimanager-color.txt||-java-Uimanager color.txt
+-java-undo-redo.java||-java-Undo redo.java
+-java-unsupported-major.minor-version-52.0-netbeans||-java-Unsupported major.minor version 52.0 netbeans
+-java-web-jersey-restful-web-services-in-java.||-java-web-Jersey restful web services in java.
+-java-web-upload-file||-java-web-Upload file
+-java-web-web.xml||-java-web-Web.xml
+-java-web-авторизация-в-сервлете||-java-web-Авторизация в сервлете
+-java-web-загрузка-файла.txt||-java-web-Загрузка файла.txt
+-java-web-подмена-адреса||-java-web-Подмена адреса
+-java-web-создание-статического-контекста-вне-war-приложения||-java-web-Создание статического контекста вне war приложения
+-java-wildfly-https.txt||-java-wildfly-Https.txt
+-java-wildfly-max-post-size.txt||-java-wildfly-Max post size.txt
+-java-wildfly-доступ-к-серверу-вне-localhost.txt||-java-wildfly-Доступ к серверу вне localhost.txt
+-java-wildfly-запуск-сервера-с-файлом-профиля.txt||-java-wildfly-Запуск сервера с файлом профиля.txt
+-java-wildfly-изменение-корневого-приложения.txt||-java-wildfly-Изменение корневого приложения.txt
+-java-wildfly-сдвиг-порта-при-запуске.txt||-java-wildfly-Сдвиг порта при запуске.txt
+-java-xml-transform||-java-xml-Transform
+-java-xml-работа-с-xml||-java-xml-Работа с xml
+-java-абсолютный-путь-к-исполняемому-jar-файлу||-java-Абсолютный путь к исполняемому jar файлу
+-java-автоматическая-ширина-столбцов-jtable.java||-java-Автоматическая ширина столбцов jtable.java
+-java-авторизация-в-сервлете||-java-Авторизация в сервлете
+-java-анализатор-кода-pmd||-java-Анализатор кода pmd
+-java-архивирование-файлов||-java-Архивирование файлов
+-java-валидация-url||-java-Валидация url
+-java-вставляем-форму-в-приложение||-java-Вставляем форму в приложение
+-java-выполнение-через-интервалы.java||-java-Выполнение через интервалы.java
+-java-делаем-spinner-со-временем||-java-Делаем spinner со временем
+-java-динамическая-загрузка-dll||-java-Динамическая загрузка dll
+-java-динамическое-изменение-иконки-в-дереве||-java-Динамическое изменение иконки в дереве
+-java-динамическое-определение-proxy||-java-Динамическое определение proxy
+-java-динамическое-подключение-dll-с-абсолютным-путем||-java-Динамическое подключение dll с абсолютным путем
+-java-добавление-горизонтальной-прокрутки-в-jcombobox||-java-Добавление горизонтальной прокрутки в jcombobox
+-java-зависание-интерфейса||-java-Зависание интерфейса
+-java-замена-значений-в-annotation-runtime||-java-Замена значений в annotation runtime
+-java-запись-в-файл||-java-Запись в файл
+-java-запуск-из-cmd.bat||-java-Запуск из cmd.bat
+-java-запуск-одного-экземпляра-приложения||-java-Запуск одного экземпляра приложения
+-java-изменение-уровня-логирования-стандартного-логера-програмно.java||-java-Изменение уровня логирования стандартного логера програмно.java
+-java-изменение-фона-для-текстового-компонента||-java-Изменение фона для текстового компонента
+-java-иконка-из-web||-java-Иконка из web
+-java-класс-для-логирования-в-консоль-и-файл||-java-Класс для логирования в консоль и файл
+-java-класс-обновления-окон-+-обработки-esc||-java-Класс обновления окон + обработки esc
+-java-конвертация-файлов-для-языковых-настроек||-java-Конвертация файлов для языковых настроек
+-java-координаты-точки-на-окружности||-java-Координаты точки на окружности
+-java-кофигурация-tomcat-для-подключения-к-БД||-java-Кофигурация tomcat для подключения к БД
+-java-кэшируем-resultset||-java-Кэшируем resultset
+-java-многопоточное-программирование||-java-Многопоточное программирование
+-java-настройка-ssl-для-tomcat||-java-Настройка ssl для tomcat
+-java-настройка-стандартного-логгера||-java-Настройка стандартного логгера
+-java-нейросети||-java-Нейросети
+-java-номер-недели||-java-Номер недели
+-java-обновление-приложений-через-сокеты||-java-Обновление приложений через сокеты
+-java-окончание-слов-для-чисел||-java-Окончание слов для чисел
+-java-определяем-расположение-панели-задач||-java-Определяем расположение панели задач
+-java-отключение-изменения-ширины-столбцов-jtable||-java-Отключение изменения ширины столбцов jtable
+-java-отслеживание-изменений-в-файловой-системе||-java-Отслеживание изменений в файловой системе
+-java-парсер-ссылок||-java-Парсер ссылок
+-java-парсинг-коммандной-строки||-java-Парсинг коммандной строки
+-java-перетягиваем-файлы-на-кнопку||-java-Перетягиваем файлы на кнопку
+-java-подключение-стандартного-логгера||-java-Подключение стандартного логгера
+-java-позиция-курсора-мышки-на-экране||-java-Позиция курсора мышки на экране
+-java-получение-изображения-компонента||-java-Получение изображения компонента
+-java-пример-создания-jtreetable||-java-Пример создания jtreetable
+-java-проблема-со-шрифтами-и-jtextpane-на-centos||-java-Проблема со шрифтами и jtextpane на centos
+-java-прогресс-бар-в-виде-радуги||-java-Прогресс бар в виде радуги
+-java-просмотр-графа-и-классов-проекта||-java-Просмотр графа и классов проекта
+-java-путь-к-моим-документам||-java-Путь к моим документам
+-java-путь-к-приложению-из-сервлета||-java-Путь к приложению из сервлета
+-java-работа-с-cookie-httpurlconnection.java||-java-Работа с cookie httpurlconnection.java
+-java-работа-с-видео||-java-Работа с видео
+-java-размер-изображения-как-в-компоненте.java||-java-Размер изображения как в компоненте.java
+-java-расположение-окна-около-кнопки-пуск||-java-Расположение окна около кнопки пуск
+-java-редирект-на-другую-страницу||-java-Редирект на другую страницу
+-java-резервирование-памяти.txt||-java-Резервирование памяти.txt
+-java-рейтинг-со-звездами||-java-Рейтинг со звездами
+-java-рисуем-форму-диалога||-java-Рисуем форму диалога
+-java-руссификация-swing||-java-Руссификация swing
+-java-руссификация-выбора-файлов-и-добавление-пункта-в-контекстное-меню||-java-Руссификация выбора файлов и добавление пункта в контекстное меню
+-java-синхронизация||-java-Синхронизация
+-java-системные-константы||-java-Системные константы
+-java-склеиваем-две-иконки||-java-Склеиваем две иконки
+-java-скопировать-в-буфер-текст-как-html||-java-Скопировать в буфер текст как html
+-java-слушатель-изменения-столбцов-jtable||-java-Слушатель изменения столбцов jtable
+-java-собственная-группа-кнопок||-java-Собственная группа кнопок
+-java-создание-jtable-с-объединенными-столбцами||-java-Создание jtable с объединенными столбцами
+-java-сортировка-таблицы||-java-Сортировка таблицы
+-java-список-системных-свойств-system.getproperties()-(property)||-java-Список системных свойств system.getproperties() (property)
+-java-таймер||-java-Таймер
+-java-текстовое-поле-с-подсказкой-jetextfieldhint.java||-java-Текстовое поле с подсказкой jetextfieldhint.java
+-java-текстовое-поле-с-подсказкой||-java-Текстовое поле с подсказкой
+-java-увеличение-памяти||-java-Увеличение памяти
+-java-установка-java-из-exe-без-его-выполнения||-java-Установка java из exe без его выполнения
+-java-установка-proxy-в-систему||-java-Установка proxy в систему
+-java-фильтр-для-сервлета||-java-Фильтр для сервлета
+-java-функциональные-интерфейсы-(lambda-expressions)||-java-Функциональные интерфейсы (lambda expressions)
+-java-чтение-данных-с-изображения||-java-Чтение данных с изображения
+-java-шаблонизатор-jsp-sitemesh||-java-Шаблонизатор jsp sitemesh
+-java-шаблонизатор-tiles||-java-Шаблонизатор tiles
+-js-$(-document-).ready()||-js-$( document ).ready()
+-js-ajax-ссылка-на-другой-сайт.js||-js-ajax-Ссылка на другой сайт.js
+-js-extjs-ajax-кроссдоменный.js||-js-extjs-Ajax кроссдоменный.js
+-js-extjs-htmleditor||-js-extjs-Htmleditor
+-js-extjs-play-dinamic||-js-extjs-Play dinamic
+-js-extjs-test||-js-extjs-Test
+-js-extjs-копирование-данных-из-таблицы.js||-js-extjs-Копирование данных из таблицы.js
+-js-extjs-маска-загрузки-для-ajax||-js-extjs-Маска загрузки для ajax
+-js-extjs-отображение-прошедшего-времени.js||-js-extjs-Отображение прошедшего времени.js
+-js-extjs-поиск-компонентов.js||-js-extjs-Поиск компонентов.js
+-js-extjs-получение-текста-из-выделенных-строк-таблицы.js||-js-extjs-Получение текста из выделенных строк таблицы.js
+-js-extjs-создание-объектов-при-определении-классов.js||-js-extjs-Создание объектов при определении классов.js
+-js-extjs-создание-приложения||-js-extjs-Создание приложения
+-js-jq-.keyup()||-js-jq-.keyup()
+-js-jq-jquery.ajax()||-js-jq-Jquery.ajax()
+-js-npm-proxy.txt||-js-npm-Proxy.txt
+-js-tooltip-(всплывающая-подсказка)||-js-Tooltip (всплывающая подсказка)
+-js-webix||-js-Webix
+-js-вставка-текста-в-позицию-курсора||-js-Вставка текста в позицию курсора
+-js-кодировка-русских-букв-в-get-запросах-ajax||-js-Кодировка русских букв в get запросах ajax
+-js-копирование-в-буфер-по-нажатию||-js-Копирование в буфер по нажатию
+-js-кроссдоменный-запрос.txt||-js-Кроссдоменный запрос.txt
+-js-массивы||-js-Массивы
+-js-отправка-form-через-ajax||-js-Отправка form через ajax
+-js-перебор-свойств-объекта||-js-Перебор свойств объекта
+-js-пространство-имен.js||-js-Пространство имен.js
+-js-скрыть-модальное-окно||-js-Скрыть модальное окно
+-linux-add-environment||-linux-Add environment
+-linux-add-path||-linux-Add path
+-linux-add-user||-linux-Add user
+-linux-all-process||-linux-All process
+-linux-centos-version||-linux-Centos version
+-linux-copy-text-mc||-linux-Copy text mc
+-linux-cp-copy-directory||-linux-Cp copy directory
+-linux-dpkg-error||-linux-Dpkg error
+-linux-find||-linux-Find
+-linux-grep-использование.txt||-linux-Grep использование.txt
+-linux-grep.txt||-linux-Grep.txt
+-linux-iptables.txt||-linux-Iptables.txt
+-linux-kill||-linux-Kill
+-linux-locate-установка-команды.txt||-linux-Locate установка команды.txt
+-linux-mc.txt||-linux-Mc.txt
+-linux-nmap-сканирование-портов-на-использование.txt||-linux-Nmap сканирование портов на использование.txt
+-linux-service||-linux-Service
+-linux-show-last-row-file-update||-linux-Show last row file update
+-linux-sudo-root||-linux-Sudo root
+-linux-systemd-на-русском.txt||-linux-Systemd на русском.txt
+-linux-systemd.txt||-linux-Systemd.txt
+-linux-unzip||-linux-Unzip
+-linux-which-откуда-запускается-программа||-linux-Which откуда запускается программа
+-linux-долгое-подключение-по-ssh.txt||-linux-Долгое подключение по ssh.txt
+-linux-конвертация-ssh-ключа-в-putty-формат.txt||-linux-Конвертация ssh ключа в putty формат.txt
+-linux-кто-висит-на-порту||-linux-Кто висит на порту
+-linux-настроить-ssh.txt||-linux-Настроить ssh.txt
+-linux-очистка-консоли.txt||-linux-Очистка консоли.txt
+-linux-переменные-в-консоли||-linux-Переменные в консоли
+-linux-поиск-строки-в-папке||-linux-Поиск строки в папке
+-linux-распаковка-tar||-linux-Распаковка tar
+-linux-расположение-systemd-файлов||-linux-Расположение systemd файлов
+-linux-сделать-sh-исполняемым||-linux-Сделать sh исполняемым
+-linux-создание-пользователя||-linux-Создание пользователя
+-linux-установка-git.txt||-linux-Установка git.txt
+-linux-установка-putty.txt||-linux-Установка putty.txt
+-linux-чем-занят-порт.txt||-linux-Чем занят порт.txt
+-markdown-syntax||-markdown-Syntax
+-meizu-root||-meizu-root
+-meizu-заряд-батареи||-meizu-Заряд батареи
+-mongodb-windows||-mongodb-Windows
+-nosql-mongodb-установка-centos||-nosql-Mongodb установка centos
+-patterns-шаблоны-проектирования||-patterns-Шаблоны проектирования
+-proxy-определяем-прокси||-proxy-Определяем прокси
+-proxy-устанавливаем-proxy-через-конкретного-пользователя.java||-proxy-Устанавливаем proxy через конкретного пользователя.java
+-proxy||-proxy
+-python-pip-proxy.txt||-python-Pip proxy.txt
+-python-обучение||-python-Обучение
+-regexp-common.txt||-regexp-Common.txt
+-regexp-вырезание-определенной-строки-без-просмотра-назад||-regexp-Вырезание определенной строки без просмотра назад
+-regexp-очистка-закоментированного-кода-в-java||-regexp-Очистка закоментированного кода в java
+-regexp-работа-с-группами.java||-regexp-Работа с группами.java
+-scala-sbt-создание-проекта.txt||-scala-Sbt создание проекта.txt
+-scala-перебор-элементов-в-списке-с-получение-номера-элемента||-scala-Перебор элементов в списке с получение номера элемента
+-server-start-tomcat||-server-Start tomcat
+-sms-отправка||-sms-Отправка
+-sql-common-рекурсивное-построение-дерева||-sql-common-Рекурсивное построение дерева
+-sql-mssql-merge||-sql-mssql-Merge
+-sql-mssql-pivot||-sql-mssql-Pivot
+-sql-mssql-varchar-to-datetime||-sql-mssql-Varchar to datetime
+-sql-mssql-активные-подключения||-sql-mssql-Активные подключения
+-sql-mssql-курсор||-sql-mssql-Курсор
+-sql-mssql-логирование||-sql-mssql-Логирование
+-sql-mssql-настройка-удаленного-доступа||-sql-mssql-Настройка удаленного доступа
+-sql-mssql-отправка-почты.sql||-sql-mssql-Отправка почты.sql
+-sql-mssql-подключение-jdbc-локально||-sql-mssql-Подключение jdbc локально
+-sql-mssql-показываем-полное-имя-процедуры-из-нее-же||-sql-mssql-Показываем полное имя процедуры из нее же
+-sql-mssql-полезные-запросы||-sql-mssql-Полезные запросы
+-sql-mssql-процедура-удаления-временных-таблиц||-sql-mssql-Процедура удаления временных таблиц
+-sql-mssql-склеивание-даты-и-времени-из-разных-дат||-sql-mssql-Склеивание даты и времени из разных дат
+-sql-mssql-сравнение-по-словам||-sql-mssql-Сравнение по словам
+-sql-mssql-столбец-в-одну-строку||-sql-mssql-Столбец в одну строку
+-sql-mssql-текст-объектов.sql||-sql-mssql-Текст объектов.sql
+-sql-mssql-текст-процедур||-sql-mssql-Текст процедур
+-sql-mssql-удаление-delete-по-inner-join||-sql-mssql-Удаление delete по inner join
+-sql-mssql-установка-management-studio-на-диск-отличный-от-c.txt||-sql-mssql-Установка management studio на диск отличный от c.txt
+-sql-mssql-хранение-иерархических-структур-данных||-sql-mssql-Хранение иерархических структур данных
+-sql-mssql-чистый-текст-из-html.sql||-sql-mssql-Чистый текст из html.sql
+-sql-oracle-add-comment-to-column.sql||-sql-oracle-Add comment to column.sql
+-sql-oracle-add-comment-to-table.sql||-sql-oracle-Add comment to table.sql
+-sql-oracle-add-comment||-sql-oracle-Add comment
+-sql-oracle-convert-varchar-to-date.sql||-sql-oracle-Convert varchar to date.sql
+-sql-oracle-default-column-value.sql||-sql-oracle-Default column value.sql
+-sql-oracle-equals-date.sql||-sql-oracle-Equals date.sql
+-sql-oracle-identity-column.txt||-sql-oracle-Identity column.txt
+-sql-oracle-info-objects.txt||-sql-oracle-Info objects.txt
+-sql-oracle-query-objects-info.sql||-sql-oracle-Query objects info.sql
+-sql-oracle-sql-developer-генерация-схемы||-sql-oracle-Sql developer генерация схемы
+-sql-oracle-top-1.sql||-sql-oracle-top-1.sql
+-sql-oracle-version.sql||-sql-oracle-version.sql
+-sql-oracle-получение-части-даты-exctract.sql||-sql-oracle-Получение части даты exctract.sql
+-sql-oracle-просмотр-всех-триггеров.sql||-sql-oracle-Просмотр всех триггеров.sql
+-sql-oracle-работа-со-временем.sql||-sql-oracle-Работа со временем.sql
+-sql-postgres-изменение-пароля-пользователя-postgres.txt||-sql-postgres-Изменение пароля пользователя postgres.txt
+-sql-psql-обновление-таблицы-по-join.sql||-sql-psql-Обновление таблицы по join.sql
+-sql-teradata-update-по-join.sql||-sql-teradata-Update по join.sql
+-sql-teradata-переименование-столбца.sql||-sql-teradata-Переименование столбца.sql
+-sql-teradata-получение-частей-строки.sql||-sql-teradata-Получение частей строки.sql
+-sql-teradata-преобразовываем-дату-в-формат.sql||-sql-teradata-Преобразовываем дату в формат.sql
+-sql-teradata-регулярка.sql||-sql-teradata-Регулярка.sql
+-sql-teradata-создание-временной-таблицы.sql||-sql-teradata-Создание временной таблицы.sql
+-sql-teradata-удаление-волатильных-таблиц.sql||-sql-teradata-Удаление волатильных таблиц.sql
+-sql-аналитические-функции||-sql-Аналитические функции
+-sql-деление-групп-на-подгруппы.sql||-sql-Деление групп на подгруппы.sql
+-sql-описание||-sql-Описание
+-sql-решения-перестроение-столбца-из-длины-в-ширину||-sql-Решения перестроение столбца из длины в ширину
+-ssl-free-certificate||-ssl-Free certificate
+-svn-автоматический-commit.bat||-svn-Автоматический commit.bat
+-svn-обновление-веток.tx||-svn-Обновление веток.tx
+-teradata-least.sql||-teradata-Least.sql
+-vba-code-execution-has-been-interrupted||-vba-Code execution has been interrupted
+-vba-dictionary.vba||-vba-Dictionary.vba
+-vba-dictionary||-vba-Dictionary
+-vba-outlook-show-folder-list.vba||-vba-Outlook show folder list.vba
+-vba-project-is-unviewable.vba||-vba-Project is unviewable.vba
+-vba-transform-condition||-vba-Transform condition
+-vba-transform-data.vb||-vba-Transform data.vb
+-vba-архивация-файла.vba||-vba-Архивация файла.vba
+-vba-внесение-данных-с-листа.vba||-vba-Внесение данных с листа.vba
+-vba-вставка-формул.vba||-vba-Вставка формул.vba
+-vba-выгрузка-данных-на-лист.vba||-vba-Выгрузка данных на лист.vba
+-vba-выполнение-кода-из-строки.vba||-vba-Выполнение кода из строки.vba
+-vba-генерация-случайных-чисел.vba||-vba-Генерация случайных чисел.vba
+-vba-генерация-списка-месяцов-по-заданному-диапазону-и-формату.vba||-vba-Генерация списка месяцов по заданному диапазону и формату.vba
+-vba-загрузка-настроек-из-xml.vba||-vba-Загрузка настроек из xml.vba
+-vba-изменение-стиля-ссылки.vba||-vba-Изменение стиля ссылки.vba
+-vba-массивы||-vba-Массивы
+-vba-некорректное-значение-в-ячейке-при-вызове-метода-.value.vba||-vba-Некорректное значение в ячейке при вызове метода .value.vba
+-vba-оператор-enum.vba||-vba-Оператор enum.vba
+-vba-отправка-почты.vba||-vba-Отправка почты.vba
+-vba-подключение-к-access-без-access.vba||-vba-Подключение к access без access.vba
+-vba-подключение-к-mysql-без-odbc||-vba-Подключение к mysql без odbc
+-vba-подключение-к-teradata-без-odbc||-vba-Подключение к teradata без odbc
+-vba-подкраска-строк-из-настройки.vba||-vba-Подкраска строк из настройки.vba
+-vba-получение-значения-из-процедуры||-vba-Получение значения из процедуры
+-vba-получение-списка-всех-драйверов.vba||-vba-Получение списка всех драйверов.vba
+-vba-получение-списка-доступных-подключений.vba||-vba-Получение списка доступных подключений.vba
+-vba-получение-текущего-каталога-запуска.vba||-vba-Получение текущего каталога запуска.vba
+-vba-проблемы-с-dictionary.vba||-vba-Проблемы с dictionary.vba
+-vba-работа-с-буфером-обмена.vba||-vba-Работа с буфером обмена.vba
+-vba-разархивирование-файла.vba||-vba-Разархивирование файла.vba
+-vba-разукрашивание-ячеек-рандомным-цветом.vba||-vba-Разукрашивание ячеек рандомным цветом.vba
+-vba-рекурсивный-просмотр-дерева.vba||-vba-Рекурсивный просмотр дерева.vba
+-vba-свернуть-окно-при-закрытии.vba||-vba-Свернуть окно при закрытии.vba
+-vba-системный-разделитель.vba||-vba-Системный разделитель.vba
+-vba-ссылка-на-книгу-в-впр.vba||-vba-Ссылка на книгу в впр.vba
+-vba-функция-по-переводу-в-транслит.vba||-vba-Функция по переводу в транслит.vba
+-vba-цветовая-палитра.vba||-vba-Цветовая палитра.vba
+-vba-чтение-и-запись-текстовых-файлов.vba||-vba-Чтение и запись текстовых файлов.vba
+-vbs-regexp.vbs||-vbs-Regexp.vbs
+-vbs-username.vbs||-vbs-Username.vbs
+-vbs-выполнение-скриптов.vbs||-vbs-Выполнение скриптов.vbs
+-vbs-загрузка-файла-из-нета.vbs||-vbs-Загрузка файла из нета.vbs
+-vbs-логирование-в-файл.vbs||-vbs-Логирование в файл.vbs
+-vbs-отправка-почты.vbs||-vbs-Отправка почты.vbs
+-vbs-получение-ip.vbs||-vbs-Получение ip.vbs
+-vbs-чтение-аргументов-командной-строки.vbs||-vbs-Чтение аргументов командной строки.vbs
+-vbs-чтение-файла.vbs||-vbs-Чтение файла.vbs
+-video-конвертация-emgrand.txt||-video-Конвертация emgrand.txt
+-video-конвертация.txt||-video-Конвертация.txt
+-web-mime-types.txt||-web-Mime types.txt
+-web-server-sent.txt||-web-Server sent.txt
+-web-soupui-отправка-json-utf8.txt||-web-Soupui отправка json utf8.txt
+-web-скачивание-файла-с-русским-названием.txt||-web-Скачивание файла с русским названием.txt
+-web-шаблон-для-bootstrap.txt||-web-Шаблон для bootstrap.txt
+-windows-10-autorun-folder.txt||-windows-10 autorun folder.txt
+-windows-10-переменные-среды.txt||-windows-10 переменные среды.txt
+-windows-bat-show-all-variables||-windows-Bat show all variables
+-windows-netstat-чем-занят-порт.txt||-windows-Netstat чем занят порт.txt
+-windows-диск-из-MBR-в-GPT-с-потерей-данных.txt||-windows-Диск из MBR в GPT с потерей данных.txt
+-windows-запрещенные-символы.txt||-windows-Запрещенные символы.txt
+-windows-планировщик||-windows-Планировщик
+-windows-работа-с-сертификатами.txt||-windows-Работа с сертификатами.txt
+-xml-cdata.xml||-xml-Cdata.xml
+-xml-xpath||-xml-Xpath
+-xml-xslt.txt||-xml-Xslt.txt
+-нейронная-сеть||-нейронная-Сеть
+java-code-base64-encoder.java||-java-Code base64 encoder.java
