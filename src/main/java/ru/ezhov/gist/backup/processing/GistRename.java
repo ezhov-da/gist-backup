@@ -40,7 +40,7 @@ public class GistRename {
             System.out.println("Имя пользователя '" + username + "'");
         }
 
-        Map<String, String> map = getMapOldNewNames();
+        Map<String, String> map = getMapOldNewNames("/rename.txt");
 
         try {
             GitHubClient gitHubClient = new GitHubClient();
@@ -82,9 +82,9 @@ public class GistRename {
         httpURLConnection.disconnect();
     }
 
-    private static Map<String, String> getMapOldNewNames() {
+    private static Map<String, String> getMapOldNewNames(String resourcePath) {
         Map<String, String> map = new HashMap<>();
-        try (Scanner scanner = new Scanner(GistRename.class.getResourceAsStream("/out-1551994528156.txt"))) {
+        try (Scanner scanner = new Scanner(GistRename.class.getResourceAsStream(resourcePath))) {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 String[] array = line.split("\\|\\|");
