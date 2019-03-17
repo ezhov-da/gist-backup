@@ -6,10 +6,8 @@ import org.eclipse.egit.github.core.client.GitHubClient;
 import org.eclipse.egit.github.core.service.GistService;
 import ru.ezhov.gist.backup.GistBackup;
 
-import java.io.IOException;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
@@ -40,7 +38,7 @@ public class GistRename {
             System.out.println("Имя пользователя '" + username + "'");
         }
 
-        Map<String, String> map = getMapOldNewNames("/rename.txt");
+        Map<String, String> map = getMapOldNewNames("/src/test/resources/rename.txt");
 
         try {
             GitHubClient gitHubClient = new GitHubClient();
