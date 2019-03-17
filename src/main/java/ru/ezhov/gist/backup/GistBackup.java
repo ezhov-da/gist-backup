@@ -33,7 +33,6 @@ public class GistBackup {
             throw new IllegalArgumentException("Не указан токен пользователя '-Dgist.token'");
         } else {
             LOG.log(Level.INFO, "Токен пользователя '" + gistToken.replaceAll(".", "*") + "'");
-            System.out.println("Токен пользователя '" + gistToken.replaceAll(".", "*") + "'");
         }
         String username = System.getProperty("gist.username");
         if (username == null || "".equals(username)) {
@@ -41,11 +40,9 @@ public class GistBackup {
             throw new IllegalArgumentException("Не указан логин пользователя '-Dgist.username'");
         } else {
             LOG.log(Level.INFO, "Имя пользователя '" + username + "'");
-            System.out.println("Имя пользователя '" + username + "'");
         }
         String bkpFolder = System.getProperty("gist.bkp.folder", System.getProperty("user.dir"));
         LOG.log(Level.INFO, "Не указана папка для бэкапа '-Dgist.bkp.folder' установлена '" + bkpFolder + "'");
-        System.out.println("Не указана папка для бэкапа '-Dgist.bkp.folder' установлена '" + bkpFolder + "'");
 
         File file = new File(
                 bkpFolder,
@@ -55,13 +52,11 @@ public class GistBackup {
                         new SimpleDateFormat("yyyyMMddHHmmss").format(new Date())
                 )
         );
-        System.out.println("Абсолютный путь файла бэкапа '" + file.getAbsolutePath() + "'");
         LOG.log(Level.INFO, "Абсолютный путь файла бэкапа '" + file.getAbsolutePath() + "'");
         try (FileOutputStream fileOutputStream = new FileOutputStream(file)) {
             XMLStreamWriter xsw = XMLOutputFactory.newFactory().createXMLStreamWriter(fileOutputStream);
             xsw.writeStartDocument();
             xsw.writeStartElement("gists");
-            System.out.println("Начато создание бэкапа...");
             LOG.log(Level.INFO, "Начато создание бэкапа...");
             System.out.print("=> ");
             AtomicInteger counter = new AtomicInteger();
@@ -85,11 +80,9 @@ public class GistBackup {
             xsw.writeEndDocument();
             xsw.close();
             long endTime = System.currentTimeMillis();
-            System.out.println("Бэкап gist создан. Количество gist '" + counter.get() + "'. Файл '" + file.getAbsolutePath() + "'. Время создания бэкапа '" + (endTime - startTime) + " ms'");
             LOG.log(Level.INFO, "Бэкап gist создан. Количество gist '" + counter.get() + "'. Файл '" + file.getAbsolutePath() + "'. Время создания бэкапа '" + (endTime - startTime) + " ms'");
         } catch (Exception e) {
             LOG.log(Level.SEVERE, "Ошибка работы приложения", e);
-            e.printStackTrace();
         }
     }
 
