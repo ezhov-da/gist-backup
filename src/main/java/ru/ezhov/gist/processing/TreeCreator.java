@@ -1,17 +1,16 @@
-package ru.ezhov.gist.backup.processing;
+package ru.ezhov.gist.processing;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import javax.swing.tree.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.*;
-import java.util.*;
+import java.io.File;
+import java.io.FileWriter;
 import java.util.List;
+import java.util.*;
 
 public class TreeCreator {
     public static void main(String[] args) {
-
         SwingUtilities.invokeLater(() ->
         {
             try {

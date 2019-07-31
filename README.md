@@ -1,3 +1,3 @@
--Dgist.token= 
--Dgist.username=
--Dgist.bkp.folder=
+-Dgist.token=  
+-Dgist.username=  
+-Dgist.bkp.folder=  

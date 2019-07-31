@@ -1,17 +1,12 @@
-package ru.ezhov.gist.backup.processing;
+package ru.ezhov.gist.processing;
 
 import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.CMYKColor;
 import com.itextpdf.text.pdf.PdfWriter;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
-import javax.xml.parsers.DocumentBuilderFactory;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.UnsupportedEncodingException;
-import java.nio.charset.StandardCharsets;
 
 //https://www.ibm.com/developerworks/ru/library/os-javapdf/index.html
 public class PdfCreator {
