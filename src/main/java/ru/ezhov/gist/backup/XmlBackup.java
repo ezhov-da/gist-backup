@@ -12,6 +12,7 @@ import java.util.logging.Logger;
 public class XmlBackup implements GistReader {
     private static final Logger LOG = Logger.getLogger(XmlBackup.class.getName());
 
+    private FileOutputStream fileOutputStream;
     private AtomicInteger counter = new AtomicInteger();
     private XMLStreamWriter xsw;
     private BackupConfiguration backupConfiguration;
@@ -20,12 +21,13 @@ public class XmlBackup implements GistReader {
     XmlBackup(BackupConfiguration backupConfiguration, Viewer viewer) throws GistReaderException {
         this.backupConfiguration = backupConfiguration;
         this.viewer = viewer;
-        try (FileOutputStream fileOutputStream = new FileOutputStream(this.backupConfiguration.createBackupFile())) {
+        try {
+            fileOutputStream = new FileOutputStream(this.backupConfiguration.createBackupFile());
             xsw = XMLOutputFactory.newFactory().createXMLStreamWriter(fileOutputStream);
             xsw.writeStartDocument();
             xsw.writeStartElement("gists");
             LOG.log(Level.FINER, "Начато создание бэкапа...");
-            System.out.print("=> ");
+            viewer.show("=> ");
         } catch (Exception e) {
             throw new GistReaderException("Не удалось создать класс для бэкапа", e);
         }
@@ -45,7 +47,7 @@ public class XmlBackup implements GistReader {
             counter.getAndIncrement();
             if ((counter.get() % 10) == 0) {
                 xsw.flush();
-                System.out.print(counter.get() + " ");
+                viewer.show(counter.get() + " ");
             }
         } catch (Exception e) {
             throw new GistReaderException("Ошибка при создании XML бэкапа");
@@ -54,10 +56,11 @@ public class XmlBackup implements GistReader {
 
     @Override
     public void close() throws Exception {
-        System.out.println();
+        viewer.show("\n\r");
         xsw.writeEndElement();
         xsw.writeEndDocument();
         xsw.close();
+        fileOutputStream.close();
         LOG.log(Level.INFO, "Бэкап gist создан. Количество gist ''{0}''. Файл ''{1}'' создан", new Object[]{counter.get(), backupConfiguration.createBackupFile().getAbsolutePath()});
     }
 
