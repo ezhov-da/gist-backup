@@ -26,8 +26,7 @@ public class GistBackup {
         BackupConfiguration backupConfiguration = systemPropertiesBackupConfigurationRepository.configuration();
         try (XmlBackup xmlBackup = new XmlBackup(backupConfiguration, new ConsoleViewer())) {
             GistRepository gistRepository = GistRepository.from(backupConfiguration, xmlBackup);
-            gistRepository.readGists();
-
+            gistRepository.readGists(xmlBackup);
         } catch (GistReaderException e) {
             LOG.log(Level.SEVERE, "Ошибка при обработке Gist", e);
         } catch (GistRepositoryException e) {

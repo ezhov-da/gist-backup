@@ -16,18 +16,16 @@ import java.util.Scanner;
 
 public class GistRepository {
     private BackupConfiguration backupConfiguration;
-    private GistReader gistReader;
 
-    private GistRepository(BackupConfiguration backupConfiguration, GistReader gistReader) {
+    private GistRepository(BackupConfiguration backupConfiguration) {
         this.backupConfiguration = BackupConfiguration.from(backupConfiguration);
-        this.gistReader = gistReader;
     }
 
     public static GistRepository from(BackupConfiguration backupConfiguration, GistReader gistReader) {
-        return new GistRepository(backupConfiguration, gistReader);
+        return new GistRepository(backupConfiguration);
     }
 
-    public void readGists() throws GistReaderException, GistRepositoryException, ReadContentGistRepositoryException {
+    public void readGists(GistReader gistReader) throws GistReaderException, GistRepositoryException, ReadContentGistRepositoryException {
         GitHubClient gitHubClient = new GitHubClient();
         gitHubClient.setOAuth2Token(backupConfiguration.getGistToken());
         GistService gistService = new GistService(gitHubClient);
