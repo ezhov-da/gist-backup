@@ -27,8 +27,7 @@ public class GistBackup {
         try (XmlBackup xmlBackup = new XmlBackup(backupConfiguration, new ConsoleViewer())) {
             GistRepository gistRepository = GistRepository.from(backupConfiguration, xmlBackup);
             gistRepository.readGists();
-            long endTime = System.currentTimeMillis();
-            LOG.log(Level.INFO, "Время создания бэкапа ''{0}'' ms", (endTime - startTime));
+
         } catch (GistReaderException e) {
             LOG.log(Level.SEVERE, "Ошибка при обработке Gist", e);
         } catch (GistRepositoryException e) {
@@ -38,5 +37,7 @@ public class GistBackup {
         } catch (Exception e) {
             LOG.log(Level.SEVERE, "Ошибка при закрытии ресурсов", e);
         }
+        long endTime = System.currentTimeMillis();
+        LOG.log(Level.INFO, "Время создания бэкапа ''{0}'' ms", (endTime - startTime));
     }
 }

@@ -56,7 +56,7 @@ public class XmlBackup implements GistReader {
 
     @Override
     public void close() throws Exception {
-        viewer.show("\n\r");
+        viewer.show("\r\n");
         xsw.writeEndElement();
         xsw.writeEndDocument();
         xsw.close();
