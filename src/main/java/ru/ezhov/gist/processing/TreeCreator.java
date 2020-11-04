@@ -18,10 +18,10 @@ public class TreeCreator {
             } catch (Throwable ex) {
                 //
             }
-            JFrame frame = new JFrame("Деревья знаний");
+            JFrame frame = new JFrame("Knowledge tree");
 
             JTextField pathToFile = new JTextField("D:\\programmer\\git\\gist-backup\\src\\main\\resources\\names.txt");
-            JButton button = new JButton("Загрузить");
+            JButton button = new JButton("Load");
             JPanel north = new JPanel(new BorderLayout());
             north.add(pathToFile, BorderLayout.CENTER);
             north.add(button, BorderLayout.EAST);
@@ -31,8 +31,8 @@ public class TreeCreator {
             tree.setEditable(true);
             tree.setCellEditor(getEditor(tree));
             JPopupMenu menu = new JPopupMenu();
-            JMenuItem itemEdit = new JMenuItem("Редактировать");
-            JMenuItem itemMove = new JMenuItem("Переместить выше");
+            JMenuItem itemEdit = new JMenuItem("Edit");
+            JMenuItem itemMove = new JMenuItem("Move UP");
             itemEdit.addActionListener(getEditActionListener(tree));
             itemMove.addActionListener(a -> {
                 SwingUtilities.invokeLater(() -> {
@@ -103,8 +103,8 @@ public class TreeCreator {
             toolBar.add(new AbstractAction() {
 
                 {
-                    putValue(Action.SHORT_DESCRIPTION, "Объеденить выбранные строки c первой");
-                    putValue(Action.NAME, "ОВССП");
+                    putValue(Action.SHORT_DESCRIPTION, "Concatenate selected rows from first");
+                    putValue(Action.NAME, "CSRFF");
                 }
 
                 @Override
@@ -139,7 +139,7 @@ public class TreeCreator {
 
             frame.add(toolBar, BorderLayout.WEST);
 
-            JButton buttonSave = new JButton("Сохранить данные");
+            JButton buttonSave = new JButton("Save");
             buttonSave.addActionListener(a -> {
                 DefaultTreeModel dtm = (DefaultTreeModel) tree.getModel();
                 if (dtm != null && dtm.getRoot() != null) {
@@ -153,7 +153,7 @@ public class TreeCreator {
                             String fullName = fullName(rootCurrent, "");
                             fileWriter.append(nodeData.getOriginal()).append("||").append(fullName).append("\n");
                         }
-                        System.out.println("файл сохранен: " + file.getAbsolutePath());
+                        System.out.println("file saved: " + file.getAbsolutePath());
                     } catch (Exception e) {
                         e.printStackTrace();
                     }

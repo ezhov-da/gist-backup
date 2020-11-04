@@ -26,10 +26,10 @@ public class XmlBackup implements GistReader {
             xsw = XMLOutputFactory.newFactory().createXMLStreamWriter(fileOutputStream);
             xsw.writeStartDocument();
             xsw.writeStartElement("gists");
-            LOG.log(Level.FINER, "Начато создание бэкапа...");
+            LOG.log(Level.FINER, "Start backup ...");
             viewer.show("=> ");
         } catch (Exception e) {
-            throw new GistReaderException("Не удалось создать класс для бэкапа", e);
+            throw new GistReaderException("Error create backup class", e);
         }
     }
 
@@ -50,7 +50,7 @@ public class XmlBackup implements GistReader {
                 viewer.show(counter.get() + " ");
             }
         } catch (Exception e) {
-            throw new GistReaderException("Ошибка при создании XML бэкапа");
+            throw new GistReaderException("Error create backup XML");
         }
     }
 
@@ -61,7 +61,7 @@ public class XmlBackup implements GistReader {
         xsw.writeEndDocument();
         xsw.close();
         fileOutputStream.close();
-        LOG.log(Level.INFO, "Бэкап gist создан. Количество gist ''{0}''. Файл ''{1}'' создан", new Object[]{counter.get(), backupConfiguration.createBackupFile().getAbsolutePath()});
+        LOG.log(Level.INFO, "Backup created. Count gist ''{0}''. File ''{1}'' created", new Object[]{counter.get(), backupConfiguration.createBackupFile().getAbsolutePath()});
     }
 
 }

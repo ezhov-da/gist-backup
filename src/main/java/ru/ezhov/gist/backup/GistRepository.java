@@ -33,7 +33,7 @@ public class GistRepository {
         try {
             gistList = gistService.getGists(backupConfiguration.getUsername());
         } catch (IOException e) {
-            throw new GistRepositoryException("Не удалось получить список Gists для пользователя '" + backupConfiguration.getUsername() + "'", e);
+            throw new GistRepositoryException("Error catch list Gist for user '" + backupConfiguration.getUsername() + "'", e);
         }
         for (Gist gist : gistList) {
             Map<String, GistFile> fileMap = gist.getFiles();
@@ -44,7 +44,7 @@ public class GistRepository {
                 try {
                     text = getContent(new URL(fileEntry.getValue().getRawUrl()));
                 } catch (MalformedURLException e) {
-                    throw new GistRepositoryException("Не удалось получить контент для пользователя '" + backupConfiguration.getUsername() + "', так как ссылка невалидная '" + rawLink + "'", e);
+                    throw new GistRepositoryException("Error retrieve content '" + backupConfiguration.getUsername() + "'. Invalid URL '" + rawLink + "'", e);
                 }
                 gistReader.read(name, text);
             }
@@ -62,7 +62,7 @@ public class GistRepository {
                 return stringBuilder.toString();
             }
         } catch (Exception e) {
-            throw new ReadContentGistRepositoryException("Не удалось получить контент по ссылке '" + url.toString() + "'", e);
+            throw new ReadContentGistRepositoryException("Error retrieve content by URL '" + url.toString() + "'", e);
         }
     }
 }

@@ -16,7 +16,7 @@ public class GistBackup {
         try {
             doBackup();
         } catch (Exception e) {
-            LOG.log(Level.SEVERE, "Непредвиденная ошибка", e);
+            LOG.log(Level.SEVERE, "Error", e);
         }
     }
 
@@ -24,19 +24,19 @@ public class GistBackup {
         long startTime = System.currentTimeMillis();
         SystemPropertiesBackupConfigurationRepository systemPropertiesBackupConfigurationRepository = new SystemPropertiesBackupConfigurationRepository();
         BackupConfiguration backupConfiguration = systemPropertiesBackupConfigurationRepository.configuration();
-        try (XmlBackup xmlBackup = new XmlBackup(backupConfiguration, new ConsoleViewer())) {
+        try (GistReader xmlBackup = new XmlBackup(backupConfiguration, new ConsoleViewer())) {
             GistRepository gistRepository = GistRepository.from(backupConfiguration, xmlBackup);
             gistRepository.readGists(xmlBackup);
         } catch (GistReaderException e) {
-            LOG.log(Level.SEVERE, "Ошибка при обработке Gist", e);
+            LOG.log(Level.SEVERE, "Error with Gist", e);
         } catch (GistRepositoryException e) {
-            LOG.log(Level.SEVERE, "Ошибка при работе с Gists репозиторием", e);
+            LOG.log(Level.SEVERE, "Error with Gists repository", e);
         } catch (ReadContentGistRepositoryException e) {
-            LOG.log(Level.SEVERE, "Ошибка при чтении контента Gist", e);
+            LOG.log(Level.SEVERE, "Error with Gist content", e);
         } catch (Exception e) {
-            LOG.log(Level.SEVERE, "Ошибка при закрытии ресурсов", e);
+            LOG.log(Level.SEVERE, "Error", e);
         }
         long endTime = System.currentTimeMillis();
-        LOG.log(Level.INFO, "Время создания бэкапа ''{0}'' ms", (endTime - startTime));
+        LOG.log(Level.INFO, "Backup time ''{0}'' ms", (endTime - startTime));
     }
 }

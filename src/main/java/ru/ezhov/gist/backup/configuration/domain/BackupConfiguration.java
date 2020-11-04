@@ -60,7 +60,7 @@ public class BackupConfiguration {
                 )
         );
 
-        LOG.log(Level.FINER, "Абсолютный путь файла бэкапа '" + file.getAbsolutePath() + "'");
+        LOG.log(Level.FINER, "Absolute path to file backup '" + file.getAbsolutePath() + "'");
 
         return file;
     }

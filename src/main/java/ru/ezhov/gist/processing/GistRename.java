@@ -24,18 +24,18 @@ public class GistRename {
         long startTime = System.currentTimeMillis();
         String gistToken = System.getProperty("gist.token");
         if (gistToken == null || "".equals(gistToken)) {
-            throw new IllegalArgumentException("Не указан токен пользователя '-Dgist.token'");
+            throw new IllegalArgumentException("Not found user token. Use '-Dgist.token'");
         } else {
-            LOG.log(Level.INFO, "Токен пользователя '" + gistToken.replaceAll(".", "*") + "'");
-            System.out.println("Токен пользователя '" + gistToken.replaceAll(".", "*") + "'");
+            LOG.log(Level.INFO, "User token '" + gistToken.replaceAll(".", "*") + "'");
+            System.out.println("User token '" + gistToken.replaceAll(".", "*") + "'");
         }
         String username = System.getProperty("gist.username");
         if (username == null || "".equals(username)) {
-            LOG.log(Level.WARNING, "Не указан логин пользователя '-Dgist.username'");
-            throw new IllegalArgumentException("Не указан логин пользователя '-Dgist.username'");
+            LOG.log(Level.WARNING, "Not found username. Set '-Dgist.username'");
+            throw new IllegalArgumentException("Not found username. Set '-Dgist.username'");
         } else {
-            LOG.log(Level.INFO, "Имя пользователя '" + username + "'");
-            System.out.println("Имя пользователя '" + username + "'");
+            LOG.log(Level.INFO, "Username '" + username + "'");
+            System.out.println("Username '" + username + "'");
         }
 
         Map<String, String> map = getMapOldNewNames("/src/test/resources/rename.txt");
@@ -51,10 +51,10 @@ public class GistRename {
                     String oldFileName = fileEntry.getKey();
                     String newName = map.get(oldFileName);
                     if (newName == null) {
-                        System.out.println("Новое имя для GIST '" + oldFileName + "' не найдено.");
+                        System.out.println("New name for GIST '" + oldFileName + "' not found.");
                     } else {
                         updateGistFileName(gist.getUrl(), gistToken, oldFileName, newName);
-                        System.out.println("Обновлено название файла с '" + oldFileName + "' на '" + newName + "'");
+                        System.out.println("Filename update from '" + oldFileName + "' to '" + newName + "'");
                     }
                 }
             }
@@ -75,7 +75,7 @@ public class GistRename {
         }
         int code = httpURLConnection.getResponseCode();
         if (code != HttpURLConnection.HTTP_OK) {
-            throw new Exception("Ошибка обновления GIST: " + oldName + " ->  " + newName);
+            throw new Exception("Error update GIST: " + oldName + " ->  " + newName);
         }
         httpURLConnection.disconnect();
     }
