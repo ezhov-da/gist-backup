@@ -12,7 +12,7 @@ You can build the project with two way
 1. Install Java 8 or higher
 1. Execute in project directory ```mvn clean package```
 1. Jar file in ```target``` folder ready for use
-1. Run as ```java -Dgist.token={you gist token} -Dgist.username={username} -Dgist.bkp.folder={backup folder} -jar {jar file}
+1. Run as ```java -Dgist.token={you gist token} -Dgist.username={username} -Dgist.bkp.folder={backup folder} -jar {jar file}```
 
 
 ### Second with Docker
