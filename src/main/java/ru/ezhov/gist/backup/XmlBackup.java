@@ -5,6 +5,7 @@ import ru.ezhov.gist.backup.configuration.domain.BackupConfiguration;
 import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamWriter;
 import java.io.FileOutputStream;
+import java.net.URL;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -34,7 +35,7 @@ public class XmlBackup implements GistReader {
     }
 
     @Override
-    public void read(String name, String content) throws GistReaderException {
+    public void read(String name, String content, URL html, URL raw) throws GistReaderException {
         try {
             xsw.writeStartElement("gist");
             xsw.writeStartElement("name");

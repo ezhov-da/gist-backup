@@ -16,13 +16,20 @@ import java.util.Scanner;
 
 public class GistRepository {
     private BackupConfiguration backupConfiguration;
+    private boolean readContent;
 
-    private GistRepository(BackupConfiguration backupConfiguration) {
+    private GistRepository(BackupConfiguration backupConfiguration, boolean readContent) {
         this.backupConfiguration = BackupConfiguration.from(backupConfiguration);
+        this.readContent = readContent;
     }
 
-    public static GistRepository from(BackupConfiguration backupConfiguration, GistReader gistReader) {
-        return new GistRepository(backupConfiguration);
+
+    public static GistRepository from(BackupConfiguration backupConfiguration) {
+        return from(backupConfiguration, true);
+    }
+
+    public static GistRepository from(BackupConfiguration backupConfiguration, boolean readContent) {
+        return new GistRepository(backupConfiguration, readContent);
     }
 
     public void readGists(GistReader gistReader) throws GistReaderException, GistRepositoryException, ReadContentGistRepositoryException {
@@ -39,14 +46,17 @@ public class GistRepository {
             Map<String, GistFile> fileMap = gist.getFiles();
             for (Map.Entry<String, GistFile> fileEntry : fileMap.entrySet()) {
                 String name = fileEntry.getKey();
-                String text = null;
+                String text = "";
                 String rawLink = fileEntry.getValue().getRawUrl();
                 try {
-                    text = getContent(new URL(fileEntry.getValue().getRawUrl()));
+                    URL url = new URL(fileEntry.getValue().getRawUrl());
+                    if (readContent) {
+                        text = getContent(url);
+                    }
+                    gistReader.read(name, text, new URL(gist.getHtmlUrl()), url);
                 } catch (MalformedURLException e) {
                     throw new GistRepositoryException("Error retrieve content '" + backupConfiguration.getUsername() + "'. Invalid URL '" + rawLink + "'", e);
                 }
-                gistReader.read(name, text);
             }
         }
     }
