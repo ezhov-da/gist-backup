@@ -1,5 +1,6 @@
 package ru.ezhov.gist.backup.configuration.repository;
 
+import ru.ezhov.gist.backup.BackupType;
 import ru.ezhov.gist.backup.configuration.domain.BackupConfiguration;
 
 import java.util.logging.Level;
@@ -27,7 +28,17 @@ public class SystemPropertiesBackupConfigurationRepository {
         }
 
         String bkpFolder = System.getProperty("gist.bkp.folder", System.getProperty("user.dir"));
-        LOG.log(Level.INFO, "Not found backup folder. Use '-Dgist.bkp.folder'. Set ''{0}''", bkpFolder);
-        return BackupConfiguration.from(gistToken, username, bkpFolder);
+        LOG.log(Level.INFO, "Backup folder. Use '-Dgist.bkp.folder'. Set ''{0}''", bkpFolder);
+
+        String bkpType = System.getProperty("gist.bkp.type", BackupType.FOLDER.name()).toUpperCase();
+        BackupType backupType;
+        try {
+            backupType = BackupType.valueOf(bkpType);
+        } catch (IllegalArgumentException ex) {
+            backupType = BackupType.FOLDER;
+        }
+        LOG.log(Level.INFO, "Backup type. Use '-Dgist.bkp.type'. Set ''{0}''", backupType);
+
+        return BackupConfiguration.from(gistToken, username, bkpFolder, backupType);
     }
 }

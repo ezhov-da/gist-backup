@@ -1,5 +1,7 @@
 package ru.ezhov.gist.backup.configuration.domain;
 
+import ru.ezhov.gist.backup.BackupType;
+
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -12,18 +14,26 @@ public class BackupConfiguration {
     private String username;
     private String bkpFolder;
 
-    private BackupConfiguration(String gistToken, String username, String bkpFolder) {
+    private BackupType backupType;
+
+    private BackupConfiguration(String gistToken, String username, String bkpFolder, BackupType backupType) {
         this.setGistToken(gistToken);
         this.setUsername(username);
         this.setBkpFolder(bkpFolder);
+        this.setBackupType(backupType);
     }
 
-    public static BackupConfiguration from(String gistToken, String username, String bkpFolder) {
-        return new BackupConfiguration(gistToken, username, bkpFolder);
+    public static BackupConfiguration from(String gistToken, String username, String bkpFolder, BackupType backupType) {
+        return new BackupConfiguration(gistToken, username, bkpFolder, backupType);
     }
 
     public static BackupConfiguration from(BackupConfiguration backupConfiguration) {
-        return new BackupConfiguration(backupConfiguration.getGistToken(), backupConfiguration.getUsername(), backupConfiguration.getBkpFolder());
+        return new BackupConfiguration(
+                backupConfiguration.getGistToken(),
+                backupConfiguration.getUsername(),
+                backupConfiguration.getBkpFolder(),
+                backupConfiguration.getBackupType()
+        );
     }
 
     private void setGistToken(String gistToken) {
@@ -38,6 +48,10 @@ public class BackupConfiguration {
         this.bkpFolder = bkpFolder;
     }
 
+    public void setBackupType(BackupType backupType) {
+        this.backupType = backupType;
+    }
+
     public String getGistToken() {
         return gistToken;
     }
@@ -48,6 +62,10 @@ public class BackupConfiguration {
 
     public String getBkpFolder() {
         return bkpFolder;
+    }
+
+    public BackupType getBackupType() {
+        return backupType;
     }
 
     public File createBackupFile() {

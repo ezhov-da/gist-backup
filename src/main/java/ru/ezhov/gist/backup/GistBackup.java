@@ -24,9 +24,19 @@ public class GistBackup {
         long startTime = System.currentTimeMillis();
         SystemPropertiesBackupConfigurationRepository systemPropertiesBackupConfigurationRepository = new SystemPropertiesBackupConfigurationRepository();
         BackupConfiguration backupConfiguration = systemPropertiesBackupConfigurationRepository.configuration();
-        try (GistReader xmlBackup = new XmlBackup(backupConfiguration, new ConsoleViewer())) {
+
+        GistReader gistReader = null;
+        try {
+            ConsoleViewer consoleViewer = new ConsoleViewer();
+            BackupType type = backupConfiguration.getBackupType();
+            if (type == BackupType.XML) {
+                gistReader = new XmlBackup(backupConfiguration, consoleViewer);
+            } else {
+                gistReader = new FolderBackup(backupConfiguration, consoleViewer);
+            }
+
             GistRepository gistRepository = GistRepository.from(backupConfiguration);
-            gistRepository.readGists(xmlBackup);
+            gistRepository.readGists(gistReader);
         } catch (GistReaderException e) {
             LOG.log(Level.SEVERE, "Error with Gist", e);
         } catch (GistRepositoryException e) {
@@ -35,6 +45,14 @@ public class GistBackup {
             LOG.log(Level.SEVERE, "Error with Gist content", e);
         } catch (Exception e) {
             LOG.log(Level.SEVERE, "Error", e);
+        } finally {
+            if (gistReader != null) {
+                try {
+                    gistReader.close();
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            }
         }
         long endTime = System.currentTimeMillis();
         LOG.log(Level.INFO, "Backup time ''{0}'' ms", (endTime - startTime));
